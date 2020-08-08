@@ -61,17 +61,17 @@ var server = http.createServer(function(request, response){
     response.setHeader('Content-Type', 'text/json; charset=utf-8')
     response.write(fs.readFileSync('./public/5.json'))
     response.end()
-  } else if(path === '/db/p1.json'){
+  } else if(path === '/db/p1.json' || path === 'public/db/p1.json'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json; charset=utf-8')
     response.write(fs.readFileSync('./db/p1.json'))
     response.end()
-  } else if(path === '/db/p2.json'){
+  } else if(path === '/db/p2.json' || path === 'public/db/p2.json'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json; charset=utf-8')
     response.write(fs.readFileSync('./db/p2.json'))
     response.end()
-  }  else if(path === '/db/p3.json'){
+  }  else if(path === '/db/p3.json' || path === 'public/db/p3.json'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json; charset=utf-8')
     response.write(fs.readFileSync('./db/p3.json'))
